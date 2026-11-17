@@ -1,0 +1,11 @@
+{
+  // Site estático da One Way no Cloudflare Workers (só arquivos estáticos, sem código de servidor).
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "oneway-site",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}
