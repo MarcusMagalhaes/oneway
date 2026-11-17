@@ -3,14 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>One Way · Consultoria e soluções práticas sob medida</title>
+  <title>One Way · O seu caminho à solução</title>
   <meta name="description" content="A One Way é uma consultoria que desenvolve soluções específicas e práticas para agilizar o dia a dia das empresas: sistemas web, aplicativos e banco de dados feitos para o processo real.">
-  <meta name="theme-color" content="#181B1F">
+  <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="One Way · Soluções práticas para o dia a dia da sua empresa">
-  <meta property="og:description" content="Consultoria e desenvolvimento de sistemas web, aplicativos e banco de dados sob medida, feitos para o processo real.">
+  <meta property="og:site_name" content="One Way">
+  <meta property="og:title" content="One Way · O seu caminho à solução">
+  <meta property="og:description" content="Consultoria e desenvolvimento de sistemas web, aplicativos e banco de dados sob medida. Tecnologia que transforma, soluções que conectam.">
+  <meta property="og:image" content="img/og-oneway.jpg">
   <meta property="og:locale" content="pt_BR">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
@@ -21,8 +24,8 @@
 <header class="topo">
   <div class="container topo-linha">
     <a href="#inicio" class="logo" aria-label="One Way, início">
-      <svg class="logo-simbolo" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 46 L28 24 L36 36 L46 20" /><path d="M38 18 H48 V28" /></svg>
-      <span class="logo-one">ONE</span><span class="logo-way">WAY</span>
+      <img class="logo-simbolo" src="img/oneway-simbolo.png" alt="" width="62" height="41">
+      <img class="logo-nome" src="img/oneway-nome.png" alt="One Way" width="148" height="18">
     </a>
     <nav class="menu" aria-label="Principal">
       <a href="#abordagem">Abordagem</a>
@@ -38,25 +41,44 @@
 
   <!-- Abertura -->
   <section class="abertura">
-    <div class="container">
-      <p class="sobretitulo">Consultoria e desenvolvimento de soluções</p>
-      <h1>Soluções práticas para o <span class="destaque">dia a dia</span> da sua empresa.</h1>
-      <p class="abertura-texto">
-        A One Way entende como o seu processo funciona de verdade e entrega a ferramenta que resolve o gargalo:
-        sistemas web, aplicativos e banco de dados feitos sob medida, que trocam planilha, formulário solto e
-        retrabalho por um fluxo simples, seguro e rápido.
-      </p>
-      <div class="acoes">
-        <a href="#contato" class="botao">Conte o seu desafio</a>
-        <a href="#projetos" class="botao botao-contorno">Ver projetos</a>
+    <div class="container abertura-grade">
+      <div>
+        <p class="sobretitulo">O seu caminho à solução</p>
+        <h1>Soluções práticas para o <span class="destaque">dia a dia</span> da sua empresa.</h1>
+        <p class="abertura-texto">
+          A One Way entende como o seu processo funciona de verdade e entrega a ferramenta que resolve o gargalo:
+          sistemas web, aplicativos e banco de dados feitos sob medida, que trocam planilha, formulário solto e
+          retrabalho por um fluxo simples, seguro e rápido.
+        </p>
+        <div class="acoes">
+          <a href="#contato" class="botao">Conte o seu desafio</a>
+          <a href="#projetos" class="botao botao-contorno">Ver projetos</a>
+        </div>
       </div>
-      <ul class="selos" aria-label="Áreas de atuação">
-        <li>Web</li>
-        <li>Mobile</li>
-        <li>Banco de dados</li>
-        <li>Integrações</li>
-      </ul>
+      <img class="abertura-simbolo" src="img/oneway-simbolo.png" alt="" width="640" height="424">
     </div>
+  </section>
+
+  <!-- Pilares da marca -->
+  <section class="pilares" aria-label="O que a One Way entrega">
+    <ul class="container pilares-lista">
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M10 9l-3 3 3 3M14 9l3 3-3 3"/></svg>
+        Sistemas
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M7 13l3-3 2 2 4-4M9 20h6M12 16v4"/></svg>
+        Soluções
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.6-7.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9"/><rect x="9.5" y="13" width="5" height="5" rx="1"/><path d="M10.5 13v-1.2a1.5 1.5 0 0 1 3 0V13"/></svg>
+        Tecnologia
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+        Consultoria
+      </li>
+    </ul>
   </section>
 
   <!-- Abordagem -->
@@ -270,10 +292,12 @@
 
 <footer class="rodape">
   <div class="container rodape-linha">
-    <a href="#inicio" class="logo logo-pequeno" aria-label="One Way, voltar ao início">
-      <span class="logo-one">ONE</span><span class="logo-way">WAY</span>
+    <a href="#inicio" class="logo" aria-label="One Way, voltar ao início">
+      <img class="logo-simbolo" src="img/oneway-simbolo.png" alt="" width="62" height="41">
+      <img class="logo-nome" src="img/oneway-nome.png" alt="One Way" width="148" height="18">
     </a>
-    <p>Consultoria e desenvolvimento de soluções práticas · © 2026 One Way</p>
+    <p class="rodape-frase">Tecnologia que <span>transforma</span>. Soluções que <span>conectam</span>.</p>
+    <p>© 2026 One Way · Consultoria e desenvolvimento de soluções</p>
   </div>
 </footer>
 

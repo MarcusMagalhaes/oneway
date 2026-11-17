@@ -9,12 +9,19 @@ Site estático da **One Way**, consultoria e desenvolvimento de soluções espec
 public/
   index.html     página única: abertura, abordagem, serviços, como trabalhamos, soluções, projetos, contato
   404.html       página de erro
-  css/style.css  identidade One Way (carvão #24282C/#181B1F, laranja #E97D25, cinza metálico #6A7077, Montserrat)
-  favicon.svg    símbolo (seta de crescimento em laranja)
+  css/style.css  identidade da logo oficial (grafite #2E3338, laranja #EE7A1E, fundo branco, Montserrat)
+  img/           símbolo, nome "ONE WAY", logo completa e imagem de compartilhamento (gerados)
+  favicon.png, apple-touch-icon.png, icon-512.png   ícones (só a esfera do símbolo)
   _headers       cabeçalhos de segurança (CSP sem scripts) e cache
   robots.txt
 wrangler.jsonc   publicação no Cloudflare Workers (só arquivos estáticos)
+docs/marca/      arte original da logo One Way
+scripts/identidade.py   gera public/img e os ícones a partir da arte original (Pillow)
 ```
+
+Marca: "O seu caminho à solução" · pilares Sistemas, Soluções, Tecnologia e Consultoria ·
+"Tecnologia que transforma. Soluções que conectam." Trocou a arte? Substitua `docs/marca/oneway-logo-original.jpg`
+e rode `python3 scripts/identidade.py`.
 
 ## Ver localmente
 
@@ -35,5 +42,5 @@ Também funciona em qualquer hospedagem estática (GitHub Pages, Netlify): basta
 ## Pendências
 
 - **WhatsApp**: em `public/index.html`, seção Contato, descomente o botão e troque `55DDDNUMERO` pelo número.
-- **Domínio**: quando estiver definido, acrescentar `<link rel="canonical">`, `og:url`, `og:image` e um `sitemap.xml`.
+- **Domínio**: quando estiver definido, acrescentar `<link rel="canonical">`, `og:url`, deixar o `og:image` com endereço completo e criar um `sitemap.xml`.
 - **Clientes**: os projetos sob medida estão descritos por segmento, sem o nome do cliente. Citar nomes ou logos só com autorização.
