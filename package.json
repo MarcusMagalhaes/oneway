@@ -1,0 +1,12 @@
+{
+  "name": "oneway-site",
+  "private": true,
+  "description": "Site estático da One Way (Cloudflare Workers, só arquivos estáticos)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.164.0"
+  }
+}
